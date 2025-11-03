@@ -1,16 +1,46 @@
-{
-    "library": {
-        "books": [
-            {
-                "Bekwarra": "is a project focused on All kind of production & servese The Art of Thinking",
-                "author": "Diane Cloud",
-                "year": 2025
-            },
-            {cd Bekwarra
-                "Bekwarra": "Code and Creativity",
-                "author": "Cloud Ugba",
-                "year": 1982
-            }
-        ]
-    }
-}
+# Hi, I'm dianecloud 👋
+
+I'm a [role: e.g., software engineer, data scientist, designer] who loves building reliable, user-focused software and learning new tools. I focus on making things simple, fast, and maintainable.
+
+## 🔧 What I do
+- Primary focus: [Short bio / what you build — replace this line]
+- Top skills: [Replace with your top technologies: e.g., Python, React, Docker, AWS]
+
+## 🚀 Featured projects
+- [project-name-1](https://github.com/dianecloud/project-name-1) — One-line description of what this project does.
+- [project-name-2](https://github.com/dianecloud/project-name-2) — One-line description of what this project does.
+- [project-name-3](https://github.com/dianecloud/project-name-3) — One-line description of what this project does.
+
+(Replace or remove entries above with your favorite repos — link them to the repo URL or a demo.)
+
+## 🔭 Currently working on
+Building: [short note about what you're building now — e.g., "a CLI for X", "a React dashboard for Y"]
+
+## 🌱 Learning
+Learning: [what you're learning — e.g., "Kubernetes, Rust, advanced CI/CD"]
+
+## 📫 Connect with me
+- Website: https://example.com
+- LinkedIn: https://linkedin.com/in/yourname
+- X / Twitter: https://x.com/yourhandle
+- Email: yourname@example.com
+
+(Replace the links above with your preferred contact channels. If you prefer badges, tell me and I'll swap them in.)
+
+## 📝 How to use my projects
+1. Clone the repo: git clone https://github.com/dianecloud/project-name-1
+2. Follow the project's README for setup and contribution guidelines.
+
+## ⚖️ Open source
+I welcome contributions — see CONTRIBUTING.md in each project for details and feel free to open issues or PRs.
+
+---
+
+Thanks for stopping by — hope you find something interesting!  
+If you'd like, I can now:
+- Replace placeholders with your real bio, skills, and social links,
+- Add shields.io badges,
+- Create a sample repo with GitHub Actions CI,
+- Or push this README to dianecloud/dianecloud for you.
+
+Which would you like next? (Paste your bio, skills, projects, and socials and say "add badges" or "plain links".)
