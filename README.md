@@ -1,14 +1,14 @@
 # Hi, I'm dianecloud 👋
 
-I'm a [role: e.g., software engineer, data scientist, designer] who loves building reliable, user-focused software and learning new tools. I focus on making things simple, fast, and maintainable.
-
+I'm a [software engineer, data scientist, designer]
 ## 🔧 What I do
-- Primary focus: [Short bio / what you build — replace this line]
-- Top skills: [Replace with your top technologies: e.g., Python, React, Docker, AWS]
+- Primary focus: [who loves building reliable, user-focused software and learning new tools. I focus on making things simple, fast, and maintainable.
+]
+- Top skills: [Python, React, Docker, AWS]
 
 ## 🚀 Featured projects
-- [project-name-1](https://github.com/dianecloud/project-name-1) — One-line description of what this project does.
-- [project-name-2](https://github.com/dianecloud/project-name-2) — One-line description of what this project does.
+- [project-SOFTWARE-1](https://github.com/dianecloud/project-SOFTWARE-1) — One-line description of what this project does.
+- [project-name-2](https://github.com/dianecloud/project-SOFTWARE-2) — One-line description of what this project does.
 - [project-name-3](https://github.com/dianecloud/project-name-3) — One-line description of what this project does.
 
 (Replace or remove entries above with your favorite repos — link them to the repo URL or a demo.)
