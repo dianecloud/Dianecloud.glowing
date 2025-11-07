@@ -1,15 +1,15 @@
 # Hi, I'm dianecloud 👋
 
-I'm a [role: e.g., software engineer, data scientist, designer] who loves building reliable, user-focused software and learning new tools. I focus on making things simple, fast, and maintainable.
-
+I'm a [software engineer, data scientist, designer]
 ## 🔧 What I do
-- Primary focus: [Short bio / what you build — replace this line]
-- Top skills: [Replace with your top technologies: e.g., Python, React, Docker, AWS]
+- Primary focus: [who loves building reliable, user-focused software and learning new tools. I focus on making things simple, fast, and maintainable.
+]
+- Top skills: [Python, React, Docker, AWS]
 
 ## 🚀 Featured projects
-- [project-name-1](https://github.com/dianecloud/project-name-1) — One-line description of what this project does.
-- [project-name-2](https://github.com/dianecloud/project-name-2) — One-line description of what this project does.
-- [project-name-3](https://github.com/dianecloud/project-name-3) — One-line description of what this project does.
+- [project-SOFTWARE-1](https://github.com/dianecloud/project-SOFTWARE-1) — One-line description of what this project does.
+- [project-Software-2](https://github.com/dianecloud/project-SOFTWARE-2) — One-line description of what this project does.
+- [project-Software-3](https://github.com/dianecloud/project-Software-3) — One-line description of what this project does.
 
 (Replace or remove entries above with your favorite repos — link them to the repo URL or a demo.)
 
@@ -28,7 +28,7 @@ Learning: [what you're learning — e.g., "Kubernetes, Rust, advanced CI/CD"]
 (Replace the links above with your preferred contact channels. If you prefer badges, tell me and I'll swap them in.)
 
 ## 📝 How to use my projects
-1. Clone the repo: git clone https://github.com/dianecloud/project-name-1
+1. Clone the repo: git clone https://github.com/dianecloud/project-Software-1
 2. Follow the project's README for setup and contribution guidelines.
 
 ## ⚖️ Open source
