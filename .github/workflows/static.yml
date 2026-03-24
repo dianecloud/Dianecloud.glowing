@@ -1,6 +1,6 @@
 name: Node CI & Docker Build
 
-on:
+on: 
   push:
     branches:
       - main
