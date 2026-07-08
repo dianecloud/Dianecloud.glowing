@@ -1,0 +1,372 @@
+Current runner version: '2.335.1'
+Runner Image Provisioner
+  Hosted Compute Agent
+  Version: 20260624.560
+  Commit: 925d229a51159bc391ae97e54a2dd1fe20af789d
+  Build Date: 2026-06-24T18:26:47Z
+  Worker ID: {389586f1-a060-4b23-9cb7-d4db051595e6}
+  Azure Region: eastus2
+Operating System
+  Ubuntu
+  24.04.4
+  LTS
+Runner Image
+  Image: ubuntu-24.04
+  Version: 20260628.225.1
+  Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260628.225/images/ubuntu/Ubuntu2404-Readme.md
+  Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260628.225
+GITHUB_TOKEN Permissions
+  Contents: read
+  Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v7' (SHA:9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0)
+Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+Download action repository 'elastic/oblt-actions@v1' (SHA:170c90b8e7bdff76058253039667bdda928a6614)
+Download action repository 'microsoft/apm-action@e5650fb81c4b5965090a17bd1ed1956071e95d17' (SHA:e5650fb81c4b5965090a17bd1ed1956071e95d17)
+Getting action download info
+Download action repository 'elastic/ci-gh-actions@v1.5.3' (SHA:2feb1c6f5086cf8e06f61ef35e275abed3456f7b)
+Getting action download info
+Download action repository 'elastic/ci-gh-actions@622f9dc1eecdd4af2e81dfb38028aacb1dae03e8' (SHA:622f9dc1eecdd4af2e81dfb38028aacb1dae03e8)
+Uses: elastic/oblt-aw/.github/workflows/aw-resolve-agentic-assets.yml@refs/heads/main (4fe3539fa73ef82c136f1680632c81ae1f0b2bca)
+ Inputs
+    control-plane-workflow: oblt-aw-automerge.yml
+    platform-additional-instructions: Target pull request number: 1034.
+  
+    platform-inputs-json: {}
+    install-apm-packages: true
+Complete job name: run-oblt-aw-pull-request / automerge / resolve-apm-assets / resolve-agentic-assets
+1s
+Run actions/checkout@v7
+  with:
+    repository: elastic/oblt-actions
+    token: ***
+    ssh-strict: true
+    ssh-user: git
+    persist-credentials: true
+    clean: true
+    sparse-checkout-cone-mode: true
+    fetch-depth: 1
+    fetch-tags: false
+    show-progress: true
+    lfs: false
+    submodules: false
+    set-safe-directory: true
+    allow-unsafe-pr-checkout: false
+Syncing repository: elastic/oblt-actions
+Getting Git version info
+  Working directory is '/home/runner/work/oblt-actions/oblt-actions'
+  /usr/bin/git version
+  git version 2.54.0
+Temporarily overriding HOME='/home/runner/work/_temp/d3d9b2c6-5c62-4cf7-8488-9808f90abdc1' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/oblt-actions/oblt-actions
+Deleting the contents of '/home/runner/work/oblt-actions/oblt-actions'
+Determining repository object format
+Initializing the repository
+  /usr/bin/git init /home/runner/work/oblt-actions/oblt-actions
+  hint: Using 'master' as the name for the initial branch. This default branch name
+  hint: will change to "main" in Git 3.0. To configure the initial branch name
+  hint: to use in all of your new repositories, which will suppress this warning,
+  hint: call:
+  hint:
+  hint: 	git config --global init.defaultBranch <name>
+  hint:
+  hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+  hint: 'development'. The just-created branch can be renamed via this command:
+  hint:
+  hint: 	git branch -m <name>
+  hint:
+  hint: Disable this message with "git config set advice.defaultBranchName false"
+  Initialized empty Git repository in /home/runner/work/oblt-actions/oblt-actions/.git/
+  /usr/bin/git remote add origin https://github.com/elastic/oblt-actions
+Disabling automatic garbage collection
+  /usr/bin/git config --local gc.auto 0
+Setting up auth
+  Removing SSH command configuration
+  /usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+  /usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+  Removing HTTP extra header
+  /usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+  /usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+  Removing includeIf entries pointing to credentials config files
+  /usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+  /usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+  /usr/bin/git config --file /home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+  /usr/bin/git config --local includeIf.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git.path /home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+  /usr/bin/git config --local includeIf.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+  /usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+  /usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+Fetching the repository
+  /usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +8cfec7c9dddee997c87307cd20d3aba77840fd4d:refs/remotes/pull/1034/merge
+  From https://github.com/elastic/oblt-actions
+   * [new ref]         8cfec7c9dddee997c87307cd20d3aba77840fd4d -> pull/1034/merge
+Determining the checkout info
+/usr/bin/git sparse-checkout disable
+/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Checking out the ref
+  /usr/bin/git checkout --progress --force refs/remotes/pull/1034/merge
+  Note: switching to 'refs/remotes/pull/1034/merge'.
+  
+  You are in 'detached HEAD' state. You can look around, make experimental
+  changes and commit them, and you can discard any commits you make in this
+  state without impacting any branches by switching back to a branch.
+  
+  If you want to create a new branch to retain commits you create, you may
+  do so (now or later) by using -c with the switch command. Example:
+  
+    git switch -c <new-branch-name>
+  
+  Or undo this operation with:
+  
+    git switch -
+  
+  Turn off this advice by setting config variable advice.detachedHead to false
+  
+  HEAD is now at 8cfec7c Merge d63c81e4b739f85b011c9533283d1559dd7d5d81 into 26dabc3edd32e2478cc238c891fb5ccad96bb835
+/usr/bin/git log -1 --format=%H
+8cfec7c9dddee997c87307cd20d3aba77840fd4d
+1s
+Run actions/checkout@v7
+  with:
+    repository: elastic/oblt-aw
+    ref: main
+    path: _oblt-aw
+    fetch-depth: 1
+    token: ***
+    sparse-checkout: scripts/agentic_assets_resolver.py
+  scripts/apm_agentic_assets.py
+  scripts/autodocignore.py
+  scripts/resolve_agentic_assets_cli.py
+  scripts/resolve_control_plane_workflow_id.py
+  scripts/resolve_repository_token_policy.py
+  scripts/workflow_registry.py
+  scripts/common.py
+  config/
+  requirements-runtime.txt
+  
+    sparse-checkout-cone-mode: false
+    ssh-strict: true
+    ssh-user: git
+    persist-credentials: true
+    clean: true
+    fetch-tags: false
+    show-progress: true
+    lfs: false
+    submodules: false
+    set-safe-directory: true
+    allow-unsafe-pr-checkout: false
+Syncing repository: elastic/oblt-aw
+Getting Git version info
+  Working directory is '/home/runner/work/oblt-actions/oblt-actions/_oblt-aw'
+  /usr/bin/git version
+  git version 2.54.0
+Temporarily overriding HOME='/home/runner/work/_temp/0043d494-b400-4b80-898c-ebd67c8ad84f' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/oblt-actions/oblt-actions/_oblt-aw
+Determining repository object format
+Initializing the repository
+  /usr/bin/git init /home/runner/work/oblt-actions/oblt-actions/_oblt-aw
+  hint: Using 'master' as the name for the initial branch. This default branch name
+  hint: will change to "main" in Git 3.0. To configure the initial branch name
+  hint: to use in all of your new repositories, which will suppress this warning,
+  hint: call:
+  hint:
+  hint: 	git config --global init.defaultBranch <name>
+  hint:
+  hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+  hint: 'development'. The just-created branch can be renamed via this command:
+  hint:
+  hint: 	git branch -m <name>
+  hint:
+  hint: Disable this message with "git config set advice.defaultBranchName false"
+  Initialized empty Git repository in /home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git/
+  /usr/bin/git remote add origin https://github.com/elastic/oblt-aw
+Disabling automatic garbage collection
+  /usr/bin/git config --local gc.auto 0
+Setting up auth
+  Removing SSH command configuration
+  /usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+  /usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+  Removing HTTP extra header
+  /usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+  /usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+  Removing includeIf entries pointing to credentials config files
+  /usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+  /usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+  /usr/bin/git config --file /home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+  /usr/bin/git config --local includeIf.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git.path /home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+  /usr/bin/git config --local includeIf.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+  /usr/bin/git config --local includeIf.gitdir:/github/workspace/_oblt-aw/.git.path /github/runner_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+  /usr/bin/git config --local includeIf.gitdir:/github/workspace/_oblt-aw/.git/worktrees/*.path /github/runner_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+Fetching the repository
+  /usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+  From https://github.com/elastic/oblt-aw
+   * [new branch]      main       -> origin/main
+Determining the checkout info
+Setting up sparse checkout
+  /usr/bin/git config core.sparseCheckout true
+  /usr/bin/git rev-parse --git-path info/sparse-checkout
+  .git/info/sparse-checkout
+Checking out the ref
+  /usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+  Switched to a new branch 'main'
+  branch 'main' set up to track 'origin/main'.
+/usr/bin/git log -1 --format=%H
+4fe3539fa73ef82c136f1680632c81ae1f0b2bca
+0s
+Run python _oblt-aw/scripts/resolve_control_plane_workflow_id.py "${CONTROL_PLANE_WORKFLOW}" --config-dir _oblt-aw/config
+  python _oblt-aw/scripts/resolve_control_plane_workflow_id.py "${CONTROL_PLANE_WORKFLOW}" --config-dir _oblt-aw/config
+  shell: /usr/bin/bash -e {0}
+  env:
+    CONTROL_PLANE_WORKFLOW: oblt-aw-automerge.yml
+0s
+Run set -euo pipefail
+  set -euo pipefail
+  if [ -f apm.yml ] || [ -f apm.yaml ]; then
+    echo "present=true" >> "${GITHUB_OUTPUT}"
+  else
+    echo "present=false" >> "${GITHUB_OUTPUT}"
+  fi
+  shell: /usr/bin/bash -e {0}
+0s
+2s
+Run actions/setup-python@v6
+  with:
+    python-version: 3.14
+    cache: pip
+    cache-dependency-path: _oblt-aw/requirements-runtime.txt
+    check-latest: false
+    token: ***
+    update-environment: true
+    allow-prereleases: false
+    freethreaded: false
+Installed versions
+  Successfully set up CPython (3.14.6)
+/opt/hostedtoolcache/Python/3.14.6/x64/bin/pip cache dir
+/home/runner/.cache/pip
+Cache hit for: setup-python-Linux-x64-24.04-Ubuntu-python-3.14.6-pip-ef930d099037a7852e5f78256374bb146a62ae665157d9b66f69a3efd4bf28e5
+Received 6041175 of 6041175 (100.0%), 55.4 MBs/sec
+Cache Size: ~6 MB (6041175 B)
+/usr/bin/tar -xf /home/runner/work/_temp/6d1eeafa-667a-4d92-a914-88e4c2929576/cache.tzst -P -C /home/runner/work/oblt-actions/oblt-actions --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: setup-python-Linux-x64-24.04-Ubuntu-python-3.14.6-pip-ef930d099037a7852e5f78256374bb146a62ae665157d9b66f69a3efd4bf28e5
+2s
+Run pip install -r _oblt-aw/requirements-runtime.txt
+  pip install -r _oblt-aw/requirements-runtime.txt
+  shell: /usr/bin/bash -e {0}
+  env:
+    pythonLocation: /opt/hostedtoolcache/Python/3.14.6/x64
+    PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.6/x64/lib/pkgconfig
+    Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.6/x64
+    Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.6/x64
+    Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.6/x64
+    LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.6/x64/lib
+Collecting PyYAML==6.0.2 (from -r _oblt-aw/requirements-runtime.txt (line 2))
+  Using cached pyyaml-6.0.2-cp314-cp314-linux_x86_64.whl
+Collecting pathspec==1.1.1 (from -r _oblt-aw/requirements-runtime.txt (line 3))
+  Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)
+Installing collected packages: PyYAML, pathspec
+
+Successfully installed PyYAML-6.0.2 pathspec-1.1.1
+0s
+0s
+0s
+Run python _oblt-aw/scripts/resolve_agentic_assets_cli.py
+  python _oblt-aw/scripts/resolve_agentic_assets_cli.py
+  shell: /usr/bin/bash -e {0}
+  env:
+    pythonLocation: /opt/hostedtoolcache/Python/3.14.6/x64
+    PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.6/x64/lib/pkgconfig
+    Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.6/x64
+    Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.6/x64
+    Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.6/x64
+    LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.6/x64/lib
+    ENABLED_WORKFLOW_ID: obs:automerge
+    REPO_ROOT: /home/runner/work/oblt-actions/oblt-actions
+    CONTROL_PLANE_CONFIG_DIR: /home/runner/work/oblt-actions/oblt-actions/_oblt-aw/config
+    PLATFORM_ADDITIONAL_INSTRUCTIONS: Target pull request number: 1034.
+  
+    PLATFORM_INPUTS_JSON: {}
+Resolved agentic assets: manifest=False extension=False source=none
+0s
+Post job cleanup.
+Cache hit occurred on the primary key setup-python-Linux-x64-24.04-Ubuntu-python-3.14.6-pip-ef930d099037a7852e5f78256374bb146a62ae665157d9b66f69a3efd4bf28e5, not saving cache.
+0s
+Post job cleanup.
+/usr/bin/git version
+git version 2.54.0
+Temporarily overriding HOME='/home/runner/work/_temp/bec91c0c-4914-4f27-9bf3-650dc20a66d0' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/oblt-actions/oblt-actions/_oblt-aw
+Removing SSH command configuration
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Removing HTTP extra header
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Removing includeIf entries pointing to credentials config files
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git.path
+includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git/worktrees/*.path
+includeif.gitdir:/github/workspace/_oblt-aw/.git.path
+includeif.gitdir:/github/workspace/_oblt-aw/.git/worktrees/*.path
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git.path
+/home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git.path /home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git/worktrees/*.path
+/home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/_oblt-aw/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/_oblt-aw/.git.path
+/github/runner_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/_oblt-aw/.git.path /github/runner_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/_oblt-aw/.git/worktrees/*.path
+/github/runner_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/_oblt-aw/.git/worktrees/*.path /github/runner_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Removing credentials config '/home/runner/work/_temp/git-credentials-5af24d76-c416-4e8c-83a9-93ff25f2e06a.config'
+1s
+Post job cleanup.
+/usr/bin/git version
+git version 2.54.0
+Temporarily overriding HOME='/home/runner/work/_temp/507ad8e0-5536-461c-ba33-385cf8460ff1' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/oblt-actions/oblt-actions
+Removing SSH command configuration
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Removing HTTP extra header
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Removing includeIf entries pointing to credentials config files
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git.path
+includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git/worktrees/*.path
+includeif.gitdir:/github/workspace/.git.path
+includeif.gitdir:/github/workspace/.git/worktrees/*.path
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git.path
+/home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git.path /home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git/worktrees/*.path
+/home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/oblt-actions/oblt-actions/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+/github/runner_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+/github/runner_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Removing credentials config '/home/runner/work/_temp/git-credentials-69de138e-8564-4b87-b64b-f659c84f73b0.config'
+0s
+Evaluate and set job outputs
+Set output 'apm-manifest-present'
+Set output 'apm-extension-present'
+Set output 'asset-source'
+Set output 'resolved-additional-instructions'
+Set output 'resolved-inputs-json'
+Set output 'resolved-setup-commands-json'
+Cleaning up orphan processes
